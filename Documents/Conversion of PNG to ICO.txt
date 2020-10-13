@@ -1,0 +1,31 @@
+Conversion of a SVG image to PNG with given image size
+======================================================
+1.	Performed via inkscape command line:
+	inkscape -z -e Target.png -w <width> -h <height> Source.svg,
+	where:
+		Source.svg	is the name of the SVG source
+		Target.png	the name of the PNG target
+		<width>		the width of the PNG image to create
+		<height>	the height of the PNG image to create
+
+	Example:
+		inkscape -z -e Award.png -w 1024 -h 1024 Award.svg
+
+Conversion of multiple PNG images to ICO with ImageMagick
+=========================================================
+1.	ImageMagick must be installed and accessible (PATH must include the ImageMagick directory, in which the executables are placed - for this particular task it will be convert.exe).
+In my case it was "C:\Program Files\ImageMagick-6.9.0-Q16"
+
+2.	The command to convert a batch of PNG files is (at least with ImageMagick 6.9):
+	convert Source.png -define icon:auto-resize=size1,size2,...,sizeN Target.ico
+	where:
+		Source.png				is the name of the square (W=H) source PNG image,
+		size1,size2,...,sizeN	the list of icon sizes in the ICO file to create
+		Target.ico				the name of the ICO file to write into.
+		
+	Example:
+	convert Release.png -define icon:auto-resize=64,48,32,16 Release.ico
+	
+3.	Filling of areas (also gradients) are preserved!
+	
+4.	Source: http://www.imagemagick.org/discourse-server/viewtopic.php?t=26252

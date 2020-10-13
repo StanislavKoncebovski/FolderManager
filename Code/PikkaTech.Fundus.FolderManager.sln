@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{3989ACBE-72E5-4EFA-9C9A-FA8141C91E7E}"
+	ProjectSection(SolutionItems) = preProject
+		..\Documents\Conversion of PNG to ICO.txt = ..\Documents\Conversion of PNG to ICO.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikkaTech.Fundus.FolderManager.WinForms", "PikkaTech.Fundus.FolderManager.WinForms\PikkaTech.Fundus.FolderManager.WinForms.csproj", "{A5A125A0-96D8-4358-A356-CA8956024EE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikkaTech.Fundus.FolderManager.UnitTests", "PikkaTech.Fundus.FolderManager.UnitTests\PikkaTech.Fundus.FolderManager.UnitTests.csproj", "{7BEF979D-C579-4778-BB98-C2D1EE494C6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5A125A0-96D8-4358-A356-CA8956024EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A125A0-96D8-4358-A356-CA8956024EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A125A0-96D8-4358-A356-CA8956024EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A125A0-96D8-4358-A356-CA8956024EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BEF979D-C579-4778-BB98-C2D1EE494C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BEF979D-C579-4778-BB98-C2D1EE494C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BEF979D-C579-4778-BB98-C2D1EE494C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BEF979D-C579-4778-BB98-C2D1EE494C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_AssemblyInfoFilename = PikkaTech.Fundus.FolderManager.WinForms\Properties\AssemblyInfo.cs
+		BuildVersion_UseGlobalSettings = True
+		SolutionGuid = {D1F3B7D9-2300-4F34-8D23-DE765771B2A2}
+	EndGlobalSection
+EndGlobal
