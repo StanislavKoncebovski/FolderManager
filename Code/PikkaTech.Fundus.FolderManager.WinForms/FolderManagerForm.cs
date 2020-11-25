@@ -638,7 +638,11 @@ namespace PikkaTech.Fundus.FolderManager.WinForms
 
 			if (folderName.ToUpper().Trim() == "TEX")
             {
-				File.Copy($"Data\\{Configuration.RemoveJunkFileName}", $"{path}\\{Configuration.RemoveJunkFileName}");
+				try
+				{
+					File.Copy($"Data\\{Configuration.RemoveJunkFileName}", $"{path}\\{Configuration.RemoveJunkFileName}");
+				}
+				catch {}
             }
 
 			foreach (XElement xSubfolder in x.Elements("Folder"))

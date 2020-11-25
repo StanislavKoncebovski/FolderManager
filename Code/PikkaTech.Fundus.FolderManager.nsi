@@ -23,5 +23,10 @@ Section "Files"
   ; Put files there
   File /r ".\Binary\Release\*.dll"
   File ".\Binary\Release\PikkaTechFolderManager.exe"
+  
+  CreateDirectory "$INSTDIR\Binary\Data"
+  SetOutPath "$INSTDIR\Binary\Data"
+  
+  File ".\Binary\Release\Data\remove_junk.bat"
    
 SectionEnd ; end the section
