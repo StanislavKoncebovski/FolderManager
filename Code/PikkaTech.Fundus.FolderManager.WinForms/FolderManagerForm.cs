@@ -23,7 +23,7 @@ namespace PikkaTech.Fundus.FolderManager.WinForms
     public partial class FolderManagerForm : Form
 	{
 		#region Varialbles
-		private static string _configuratiuonFileName = "Configuration.xml";
+		private static string		_configurationFileName =			 "Configuration.xml";
 
 		private string				m_strCurrentTemplateFileName		= null;
 		private bool				m_bIsTemplateChanged				= false;
@@ -143,9 +143,9 @@ namespace PikkaTech.Fundus.FolderManager.WinForms
 			s_xDefaultTemplate				= XElement.Parse(s_strDefaultTemplate);
 			s_xDefaultIconAssignmentFile	= XElement.Parse(s_strDefaultIconAssignmentFile);
 
-			if (File.Exists(_configuratiuonFileName))
+			if (File.Exists(_configurationFileName))
             {
-				XElement x = XElement.Load(_configuratiuonFileName);
+				XElement x = XElement.Load(_configurationFileName);
 				Configuration = Configuration.FromXElement(x);
             }
 		}
@@ -636,6 +636,11 @@ namespace PikkaTech.Fundus.FolderManager.WinForms
 				w.Close();
 			}
 
+			if (folderName.ToUpper().Trim() == "TEX")
+            {
+				File.Copy($"Data\\{Configuration.RemoveJunkFileName}", $"{path}\\{Configuration.RemoveJunkFileName}");
+            }
+
 			foreach (XElement xSubfolder in x.Elements("Folder"))
 			{
 				CreateSolutionDirectory(path, xSubfolder);
@@ -793,7 +798,7 @@ namespace PikkaTech.Fundus.FolderManager.WinForms
 
 				XElement x	= Configuration.ToXElement();
 
-				x.Save(_configuratiuonFileName);
+				x.Save(_configurationFileName);
             }
         }
     }
