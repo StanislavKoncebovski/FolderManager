@@ -51,6 +51,10 @@ namespace PikkaTech.Fundus.FolderManager.WinForms
       <Folder Title=""Debug"" Icon="""" />
       <Folder Title=""Release"" Icon="""" />
     </Folder>
+	<Folder Title = ""CSharp"" Icon=""CSharp.ico"">
+	</Folder>
+	<Folder Title = ""Python"" Icon=""Python.ico"">
+	</Folder>
   </Folder>
 
   <Folder Title=""Correspondence"" Icon=""Correspondence.ico"">
@@ -132,6 +136,14 @@ namespace PikkaTech.Fundus.FolderManager.WinForms
   <Folder Name=""UML"" Icon=""UML.ico"" />
   <Folder Name=""uml"" Icon=""UML.ico"" />
   <Folder Name=""Releases"" Icon=""Release.ico"" />
+  <Folder Name=""Scilab"" Icon=""scilab.ico"" />
+  <Folder Name=""Julia"" Icon=""julia.ico"" />
+  <Folder Name=""JavaScript"" Icon=""javascript.ico"" />
+  <Folder Name=""Java"" Icon=""java.ico"" />
+  <Folder Name=""PHP"" Icon=""php.ico"" />
+  <Folder Name=""CSharp"" Icon=""csharp.ico"" />
+  <Folder Name=""CPP"" Icon=""cpp.ico"" />
+  <Folder Name=""Python"" Icon=""python.ico"" />
 </FolderIcons>
 ";
 		#endregion
